@@ -6,11 +6,11 @@
 
 @section("content")
 
-    <div class="row d-flex">
         @foreach($posts as $post)
+
         <div class="col-md-6 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-                <a href="article.html" class="block-20" style="background-image: url('{{ asset('assets/images/' . $post->image) }}')">
+                <a href="{{ asset('assets/article.html') }}" class="block-20" style="background-image: url('{{ asset('assets/images/' . $post->image) }}')">
                 </a>
             <div class="text p-4 float-right d-block">
                 <div class="topper d-flex align-items-center">
@@ -30,10 +30,11 @@
                   </div>
                   <h3 class="heading mb-3"><a href="#">{{ $post->title }}</a></h3>
                   <p>{{ $post->resume }}</p>
-                   <p><a href="article.html" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p>
+                   <p><a href="{{ asset('assets/article.html') }}" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p>
                 </div>
             </div>
         </div>
+        
         @endforeach
 
         <div class="row mt-5">

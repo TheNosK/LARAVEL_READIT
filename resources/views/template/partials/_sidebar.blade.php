@@ -1,4 +1,3 @@
-<!-- .col-md-8 -->
 <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
             <div class="sidebar-box">
               <form action="#" class="search-form">
@@ -71,3 +70,7 @@
             </div>
 
           </div>
+
+        </div>
+      </div>
+    </section>
