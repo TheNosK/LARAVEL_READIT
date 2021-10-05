@@ -1,26 +1,21 @@
-<!-- head -->
-    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     @include('template.partials._head')
+  </head>
+  <body>
 
-<!-- nav -->
+	    @include('template.partials._nav')
 
-    @include('template.partials._nav')
+        @include('template.partials._header')
 
-<!-- MAIN -->
+        @include('template.partials._main')
 
-    @include('template.partials._main')
+        @include('template.partials._footer')
 
-<!-- Sidebar -->
+        @include('template.partials._loader')
 
-    @include('template.partials._sidebar')
-    
-<!-- Footer -->
-
-    @include('template.partials._footer')
-
-<!-- loaders -->
+        @include('template.partials._scripts')
   
-    @include('template.partials._scripts')
-
   </body>
 </html>

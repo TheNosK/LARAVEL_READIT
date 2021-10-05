@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\PostsController::class, 'index'])
-    ->name('homepage');
+     ->name('homepage');
 
 Route::get('/posts', [\App\Http\Controllers\PostsController::class, 'index'])
-    ->name('posts.index');
+     ->name('posts.index');
 
 Route::get('/posts/{post}/{slug}', [\App\Http\Controllers\PostsController::class, 'show'])
-    ->name('show.index');
+     ->name('posts.show');

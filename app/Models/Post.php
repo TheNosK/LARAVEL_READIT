@@ -9,10 +9,19 @@ class Post extends Model
 {
     use HasFactory;
 
-    public function tags () {
+    public function tags() {
         return $this->belongsToMany(Tag::class, 'posts_has_tags');
     }
 
-    
-}
+    public function author() {
+        return $this->belongsTo(Author::class);
+    }
 
+    public function comments() {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function categorie() {
+        return $this->belongsTo(Categorie::class, 'category_id');
+    }
+}
