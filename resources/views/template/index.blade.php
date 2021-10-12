@@ -5,7 +5,7 @@
   </head>
   <body>
 
-	    @include('template.partials._nav')
+	      @include('template.partials._nav')
 
         @include('template.partials._header')
 

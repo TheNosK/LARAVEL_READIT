@@ -13,7 +13,6 @@
         'categories' => \App\Models\Categorie::orderBy('name', 'ASC')->get()
       ])
 
-
       @include('posts._recents', [
         'posts' => \App\Models\Post::orderBy('created_at', 'DESC', )->take(3)->get()                           
       ])
